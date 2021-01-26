@@ -22,18 +22,15 @@ WCMP是基于Windows x64平台下的Caddy2 + PHP + MySQL便携软件包。用来
 * 默认网站目录是site01。你可以访问http://127.0.0.1 浏览。
 
 ### MySQL设置
-登录MySQL，先打开MySQL bin运行目录(例如`cd E:\WCMP\mysql\bin`)，再运行`mysql -u root mysql`。
+登录MySQL，先打开MySQL bin运行目录(例如`cd E:\WCMP\mysql\bin`)，再运行`mysql -u root mysql`等命令。
 #### 修改MySQL root密码
+运行WCMP后推荐首先设置MySQL root密码。
 ```
-mysql> set password for 'root'@'localhost' = password('MyNewPass');
-mysql> FLUSH PRIVILEGES;
-mysql> exit
+mysqladmin -uroot password
 ```
 #### 创建数据库
 ```
-mysql> mysql -u root mysql
-mysql> CREATE DATABASE new_database;
-mysql> exit
+mysqladmin -u root -p create your_db_name
 ```
 
 ### 使用Adminer
