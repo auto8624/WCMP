@@ -52,7 +52,7 @@ www.yourdomain.com {
 ```
 
 #### Caddyfile WebDAV演示😄
-请编辑`WCMP\caddy\Caddyfile`进行设置。演示账号为`jiih`，密码为`jiih.com`
+请编辑`WCMP\caddy\Caddyfile`进行设置。演示账号为`jiih`，密码为`jiih.com`，文件目录位于`www\webdav`。
 ```
 www.yourdomain.com {
 root *  ..\www\webdav
